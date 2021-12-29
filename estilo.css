@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+ul{
+    list-style: none;
+    padding: 5px;
+    background-color: rgb(146, 146, 221);
+    font: size 0;
+    text-align: center;
+    display: flex;  flex-direction: row; 
+    justify-content: space-around;
+}
+li{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    text-decoration:none;
+    padding: 10px;
+}
+li a{
+    text-decoration: none;
+    color: white;    
+    display: inline-block;
+    padding: 20px;
+}
+li:hover{
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+}
+.caja1{
+    background-color: rgb(253, 253, 253);
+    line-height: 1.630;
+    color: rgb(0, 0, 0);
+    padding-top: 3px;
+    margin: 30px;
+    width: 600px;
+    height: 100px;
+    display: inline-block;
+    text-align:center;
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 6;
+    font-size:16pt;
+}
+h2{
+    color: rgb(95, 109, 233);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    line-height: 2.0;
+}
+.caja2{
+    background-color: rgb(253, 253, 253);
+    line-height: 1.630;
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+    margin: 50px;
+    width: 600px;
+    height: 300px;
+    display: inline-block;
+    text-align:left;
+}
+.contenedor{
+    margin: 20px;
+    padding: 20px auto;
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "header header header"
+    "pregunta pregunta pregunta"
+    "caja1 antiparras antiparras"
+    "footer footer footer"
+    ;
+}   
